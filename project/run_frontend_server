@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+socat openssl-listen:9876,fork,cert=./ecc/bundle_serveur.pem,cafile=./ecc/ecc.ca.cert.pem,verify=0 tcp:127.0.0.1:8080

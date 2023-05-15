@@ -1,0 +1,5 @@
+#!/usr/bin/bash -x
+
+curl -X POST -d 'identite=toto' -d 'intitule_certif=SecuTIC' --cacert ecc.ca.cert.pem https://localhost:9876/creation
+curl -o my_cert.png --cacert ecc.ca.cert.pem https://localhost:9876/fond
+curl -F image=@my_cert.png --cacert ecc.ca.cert.pem https://localhost:9876/verification

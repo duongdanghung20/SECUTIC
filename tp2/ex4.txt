@@ -1,0 +1,3 @@
+a. echo 'U2VjdS5USUMK' | openssl base64 -d ----> Secu.TIC
+b. openssl enc -d -des-cbc -provider legacy -provider default -pass pass:Secu.TIC -md md5 -in chiffre.des -out dechiffre.des
+c. JPEG
